@@ -1,0 +1,143 @@
+.vazir {
+  font-family: "Vazir-Light-FD-WOL";
+}
+
+body {
+  font-family: "vazir";
+  direction: rtl;
+  margin: 20px;
+  color: #3742db;
+  background-color: #dce0ff;
+}
+
+.formContainer {
+  color: #3742db;
+  font-family: "vazir";
+  direction: rtl;
+  padding: 30px;
+  background-color: #b9c1fd;
+  height: auto;
+  min-width: 150px;
+  max-width: 30%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  border: 1px solid #3742db;
+  justify-content: space-around;
+}
+
+input {
+  font-family: "vazir";
+  direction: rtl;
+  max-width: 80%;
+  padding: 5px;
+  margin: 7px auto 7px auto;
+  min-width: 50px;
+  border: 1px solid #3742db;
+  background-color: #e4e7fc;
+}
+
+.submitButton {
+  color: #3742db;
+  font-family: "vazir";
+  direction: rtl;
+  background-color: #dce0ff;
+  height: auto;
+  min-width: 50px;
+  max-width: 50%;
+  margin: auto;
+  padding: 2%;
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid #3742db;
+}
+
+.submitButton:hover {
+  background-color: #cdd2fc;
+}
+
+.homePageButton {
+  color: #3742db;
+  font-family: "vazir";
+  direction: rtl;
+  background-color: #cdd2fc;
+  height: auto;
+  min-width: 85px;
+  max-width: 10%;
+  margin: auto 10px;
+  padding: 2%;
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid #3742db;
+}
+
+.homePageButton:hover {
+  background-color: #a5adf7;
+}
+
+.logoutButton {
+  color: #3742db;
+  font-family: "vazir";
+  direction: rtl;
+  margin: 10px auto;
+  display: block;
+  background-color: #cdd2fc;
+  height: auto;
+  width: 250px;
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid #3742db;
+}
+
+.logoutButton:hover {
+  background-color: #a5adf7;
+}
+
+.centerDiv {
+  text-align: center;
+  margin: auto;
+}
+
+.marginTop {
+  margin-top: 2%;
+}
+
+.link {
+  font-family: "vazir";
+  direction: rtl;
+  color: #3742db;
+  padding: 5px;
+  margin: 0 auto;
+  height: auto;
+  max-width: 50%;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.link:hover {
+  color: #030d9c;
+}
+
+.errorMessage {
+  font-family: "vazir";
+  direction: rtl;
+  color: rgb(255, 131, 131);
+  text-align: center;
+  font-weight: bold;
+  min-width: 100px;
+}
+
+.welcomeBox {
+  color: #3742db;
+  font-family: "vazir";
+  direction: rtl;
+  margin: auto;
+  background-color: #cdd2fc;
+  min-width: 50px;
+  max-width: 20%;
+  min-height: 15px;
+  padding: 1%;
+  text-align: center;
+  border: 1px solid #3742db;
+}
