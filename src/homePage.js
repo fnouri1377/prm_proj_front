@@ -16,13 +16,6 @@ class HomePage extends React.Component {
         this.props.history.push(`/signup`)
     }
 
-    componentDidMount() {
-        this.setState({
-            values: {},
-            errorMessage: ''
-        });
-    }
-
     render() {
         return (
             <div className="centerDiv">

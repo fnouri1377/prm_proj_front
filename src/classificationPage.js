@@ -2,7 +2,7 @@ import React from "react";
 import "./index.css";
 import { withRouter } from 'react-router-dom';
 
-class ChangeClassificationPage extends React.Component {
+class ClassificationPage extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -148,4 +148,4 @@ class ChangeClassificationPage extends React.Component {
     }
 }
 
-export default withRouter(ChangeClassificationPage);
+export default withRouter(ClassificationPage);

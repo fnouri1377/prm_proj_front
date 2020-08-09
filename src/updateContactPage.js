@@ -177,11 +177,11 @@ class UpdateContactPage extends React.Component {
     }
 
     componentDidMount() {
-        this.getContact(this.props.contact_name);
         this.setState({
             values: {},
             errorMessage: ''
         });
+        this.getContact(this.props.contact_name);
     }
 
     render() {
@@ -194,7 +194,6 @@ class UpdateContactPage extends React.Component {
                     <input
                         type="text"
                         required={true}
-                        // placeholder={this.state.contact.name}
                         className="marginTop"
                         value={this.state.values['name']}
                         onChange={e => this.handleChange("name", e)}
@@ -204,7 +203,6 @@ class UpdateContactPage extends React.Component {
                     <input
                         type="Date"
                         required={false}
-                        // placeholder={this.state.contact.birthDate}
                         className="marginTop"
                         value={this.state.values['birthDate']}
                         onChange={e => this.handleChange("birthDate", e)}
@@ -214,7 +212,6 @@ class UpdateContactPage extends React.Component {
                     <input
                         type="number"
                         required={false}
-                        // placeholder={this.state.contact.debt_userToCon}
                         className="marginTop"
                         value={this.state.values['debt_userToCon']}
                         onChange={e => this.handleChange("debt_userToCon", e)}
@@ -224,7 +221,6 @@ class UpdateContactPage extends React.Component {
                     <input
                         type="number"
                         required={false}
-                        // placeholder={this.state.contact.debt_conToUser}
                         className="marginTop"
                         value={this.state.values['debt_conToUser']}
                         onChange={e => this.handleChange("debt_conToUser", e)}
@@ -234,7 +230,6 @@ class UpdateContactPage extends React.Component {
                     <input
                         type="text"
                         required={false}
-                        // placeholder={this.state.contact.note}
                         className="marginTop"
                         value={this.state.values['note']}
                         onChange={e => this.handleChange("note", e)}
@@ -244,7 +239,6 @@ class UpdateContactPage extends React.Component {
                     <input
                         type="number"
                         required={false}
-                        // placeholder={this.state.contact.duration_message}
                         className="marginTop"
                         value={this.state.values['duration_message']}
                         onChange={e => this.handleChange("duration_message", e)}
@@ -256,7 +250,6 @@ class UpdateContactPage extends React.Component {
                     <input
                         type="number"
                         required={false}
-                        // placeholder={this.state.contact.duration_call}
                         className="marginTop"
                         value={this.state.values['duration_call']}
                         onChange={e => this.handleChange("duration_call", e)}
@@ -268,7 +261,6 @@ class UpdateContactPage extends React.Component {
                     <input
                         type="number"
                         required={false}
-                        // placeholder={this.state.contact.duration_meeting}
                         className="marginTop"
                         value={this.state.values['duration_meeting']}
                         onChange={e => this.handleChange("duration_meeting", e)}

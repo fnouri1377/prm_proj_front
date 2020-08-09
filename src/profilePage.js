@@ -44,6 +44,7 @@ class ProfilePage extends React.Component {
                 response.json().then(json => {
                     console.log("json = ", json);
                     this.props.setUsername('');
+                    this.props.setName('');
                     this.props.history.push('/');
                 });
             }

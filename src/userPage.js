@@ -8,8 +8,6 @@ class UserPage extends React.Component {
 		this.state = {};
 	}
 
-	componentDidMount() { }
-
 	goToAddContact = () => {
 		this.props.history.push(`/user/addContact`);
 	}

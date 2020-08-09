@@ -64,27 +64,6 @@ class UpdateGroupPage extends React.Component {
                             values: { ...values, note: json.note }
                         });
                     }
-
-                    // if (json.duration_message !== undefined && json.duration_message !== null) {
-                    //     const { values } = this.state;
-                    //     this.setState({
-                    //         values: { ...values, duration_message: json.duration_message }
-                    //     });
-                    // }
-
-                    // if (json.duration_call !== undefined && json.duration_call !== null) {
-                    //     const { values } = this.state;
-                    //     this.setState({
-                    //         values: { ...values, duration_call: json.duration_call }
-                    //     });
-                    // }
-
-                    // if (json.duration_meeting !== undefined && json.duration_meeting !== null) {
-                    //     const { values } = this.state;
-                    //     this.setState({
-                    //         values: { ...values, duration_meeting: json.duration_meeting }
-                    //     });
-                    // }
                 });
             }
         });
@@ -138,11 +117,11 @@ class UpdateGroupPage extends React.Component {
     }
 
     componentDidMount() {
-        this.getGroup(this.props.group_name);
         this.setState({
             values: {},
             errorMessage: ''
         });
+        this.getGroup(this.props.group_name);
     }
 
     render() {
@@ -155,7 +134,6 @@ class UpdateGroupPage extends React.Component {
                     <input
                         type="text"
                         required={true}
-                        // placeholder={this.state.group.name}
                         className="marginTop"
                         value={this.state.values["name"]}
                         onChange={e => this.handleChange("name", e)}
@@ -165,7 +143,6 @@ class UpdateGroupPage extends React.Component {
                     <input
                         type="text"
                         required={false}
-                        // placeholder={this.state.group.note}
                         className="marginTop"
                         value={this.state.values["note"]}
                         onChange={e => this.handleChange("note", e)}

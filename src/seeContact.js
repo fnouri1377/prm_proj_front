@@ -60,8 +60,6 @@ class SeeContactPage extends React.Component {
         let birthDate = '';
         if (!!this.state.contact) {
             if (!!this.state.contact.birthDate) {
-                // console.log(this.state.contact.birthDate);
-                // console.log(typeof (this.state.contact.birthDate));
                 birthDate = `${this.state.contact.birthDate.substring(5, 7)}/${this.state.contact.birthDate.substring(8, 10)}/${this.state.contact.birthDate.substring(0, 4)}`
             }
         }

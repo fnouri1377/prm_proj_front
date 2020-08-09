@@ -130,11 +130,11 @@ class UpdateProfilePage extends React.Component {
     }
 
     componentDidMount() {
-        this.getUser();
         this.setState({
             values: {},
             errorMessage: ''
         });
+        this.getUser();
     }
 
     render() {
@@ -146,7 +146,6 @@ class UpdateProfilePage extends React.Component {
                     <input
                         type="text"
                         required={true}
-                        // placeholder={this.state.user.name}
                         className="marginTop"
                         value={this.state.values['name']}
                         onChange={e => this.handleChange("name", e)}
@@ -156,7 +155,6 @@ class UpdateProfilePage extends React.Component {
                     <input
                         type="text"
                         required={true}
-                        // placeholder={this.state.user.username}
                         className="marginTop"
                         value={this.state.values['username']}
                         onChange={e => this.handleChange("username", e)}
@@ -166,7 +164,6 @@ class UpdateProfilePage extends React.Component {
                     <input
                         type="text"
                         required={true}
-                        // placeholder={this.state.user.password}
                         className="marginTop"
                         value={this.state.values['password']}
                         onChange={e => this.handleChange("password", e)}
